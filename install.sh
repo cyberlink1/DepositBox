@@ -7,7 +7,7 @@ sudo pecl channel-update pecl.php.net
 sudo pecl install gnupg
 sudo lighty-enable-mod fastcgi 
 sudo lighty-enable-mod fastcgi-php
-sudo echo "extension=gnupg.so" >> /etc/php/8.1/cgi/conf.d/20-gnupg.ini
+echo "extension=gnupg.so" | sudo tee -a /etc/php/8.1/cgi/conf.d/20-gnupg.ini
 sudo service lighttpd force-reload
 sudo cp -r DepositBox /var/www/html
 sudo mkdir /var/www/.gpg
