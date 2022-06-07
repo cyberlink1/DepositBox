@@ -20,9 +20,17 @@ sudo systemctl start lighttpd
 sudo systemctl stop tor
 sudo systemctl start tor
 #start tor will create /var/lib/hidden_service/authorized_clients
+sudo systemctl enable lighttpd
 
-#On Client Side
-#ClientOnionAuthDir /var/lib/tor/onion_auth to /etc/tor/torrc
-#create directory /var/lib/tor/onion_auth
+echo "Please run the tor-client-key.py to create the client key"
+echo "transfer the <name>.auth_private to your client host"
+echo " you will need to edit the /etc/tor/torrc file on the client"
+echo " and add the following line"
+echo ""
+echo "ClientOnionAuthDir /var/lib/tor/onion_auth"
+echo ""
+echo "Create the directory /var/lib/tor/onion_auth"
+echo "then move the <name>.auth_private into the /var/lib/tor/onion_auth."
+echo "Please check the permission (shoould be chmod 644) and owner of the file"
+echo ""
 
-systemctl enable tor
