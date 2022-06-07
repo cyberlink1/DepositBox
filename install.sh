@@ -10,7 +10,8 @@ sudo service lighttpd force-reload
 mkdir /var/www/.gpg
 cd /var/www/html
 
-#sudo git clone https://github.com/jvaubourg/php-piratebox.git
+#Still need to work on this
+#sudo git clone https://github.com/cyberlink1/DepositBox.git
 #sudo chown -R www-data:www-data DepositBox
 
 #set lighttpd to service.bind = 127.0.0.1
