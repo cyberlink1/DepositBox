@@ -29,7 +29,11 @@ This is something Ive been playing with and this is just a draft copy of the rea
 The install script will update your image, install all the needed packages, configure lighthttpd and Tor, then start them up. 
 When it ends, it will give you some information as well as the new onion address of the host. It will also cover how to set the tor auth keys.
 
-You will then need to run the tor-client-key.py This will create a set of auth keys, it puts the public key in the correct postions
+You will then need to run the tor-client-key.py. This will need to run as admin so sudo the command.
+
+sudo ./tor-client-key.py
+
+This will create a set of auth keys, it puts the public key in the correct postions
 on the system. It creates the <name>.auth_private key in the directory you run the scritp in. You will need to copy the private key to your client and install it.
   
 Some things to note:
