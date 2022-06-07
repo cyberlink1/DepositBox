@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 echo "not working yet!"
 exit
 sudo apt-get install lighttpd php-cgi git pip tor php-pear php8.1-dev libgpgme-dev -y
@@ -9,7 +9,7 @@ sudo lighty-enable-mod fastcgi
 sudo lighty-enable-mod fastcgi-php
 sudo echo "extension=gnupg.so" >> /etc/php/8.1/cgi/conf.d/20-gnupg.ini
 sudo service lighttpd force-reload
-sudo cp DepositBox /var/www/html
+sudo cp -r DepositBox /var/www/html
 sudo mkdir /var/www/.gpg
 cd /var/www/html
 sudo chown -R www-data:www-data DepositBox
