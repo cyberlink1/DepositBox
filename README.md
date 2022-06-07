@@ -12,3 +12,10 @@ After the key is uploaded, any further uploads will be gpg encrypted before bein
 The file storage location will eventually be an encrypted usb drive.
 
 This is something Ive been playing with and this is just a draft copy of the readme so more to come shortly.
+  
+  
+  TODO
+  Finish install.sh
+  Build php based rsync config to allow secure automated rsync between different units.
+  Build hardening script to harden the system.
+  
