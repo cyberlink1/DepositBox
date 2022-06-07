@@ -3,14 +3,14 @@ echo "not working yet!"
 exit
 sudo apt-get install lighttpd php-cgi git pip tor php-pear php8.1-dev libgpgme-dev -y
 sudo pip install pynacl
-pecl channel-update pecl.php.net
-pecl install gnupg
+sudo pecl channel-update pecl.php.net
+sudo pecl install gnupg
 sudo lighty-enable-mod fastcgi 
 sudo lighty-enable-mod fastcgi-php
-echo "extension=gnupg.so" >> /etc/php/8.1/cgi/conf.d/20-gnupg.ini
+sudo echo "extension=gnupg.so" >> /etc/php/8.1/cgi/conf.d/20-gnupg.ini
 sudo service lighttpd force-reload
 sudo cp DepositBox /var/www/html
-mkdir /var/www/.gpg
+sudo mkdir /var/www/.gpg
 cd /var/www/html
 sudo chown -R www-data:www-data DepositBox
 
