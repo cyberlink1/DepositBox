@@ -26,12 +26,11 @@ You will then need to run the tor-client-key.py. This will need to run as admin 
 
 sudo ./tor-client-key.py
 
-This will create a set of auth keys, it puts the public key in the correct postions
-on the system. 
-It will first display all active Tor Services and let you select the one to create the key pair for.
-It will create the \<name\>.auth key in the select tor service
-It creates the \<name\>.auth_private key in the directory you run the scritp in. 
-You will need to copy the private key to your client and install it.
+* This will create a set of auth keys. 
+* It will first display all active Tor Services and let you select the one to create the key pair for.
+* It will create the \<name\>.auth key in the select tor service
+* It creates the \<name\>.auth_private key in the directory you run the scritp in. 
+* You will need to copy the private key to your client and install it.
   
 Some things to note:
   * to activate the gpg encryption you need to upload your gpg public key. The file must end with .gpgkey The server will reconize that file name and place the key in the /var/www/.gpg directory activating the auto-encrypt functions.
