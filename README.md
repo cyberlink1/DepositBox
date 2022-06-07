@@ -29,7 +29,7 @@ sudo ./tor-client-key.py
 * This will create a set of auth keys. 
 * It will first display all active Tor Services and let you select the one to create the key pair for.
 * It will create the \<name\>.auth key in the select tor service
-* It creates the \<name\>.auth_private key in the directory you run the scritp in. 
+* It creates the \<name\>.auth_private key in the directory you run the script in. 
 * You will need to copy the private key to your client and install it.
 * Once you copy the private key to your client and remove it from the server, you need to reboot the PI or restart the Tor service.
   
