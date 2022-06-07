@@ -1,4 +1,6 @@
 !#/bin/bash
+echo "not working yet!"
+exit
 sudo apt-get install lighttpd php-cgi git pip tor php-pear php8.1-dev libgpgme-dev -y
 sudo pip install pynacl
 pecl channel-update pecl.php.net
