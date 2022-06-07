@@ -34,11 +34,11 @@ You will then need to run the tor-client-key.py. This will need to run as admin 
 sudo ./tor-client-key.py
 
 This will create a set of auth keys, it puts the public key in the correct postions
-on the system. It creates the <name>.auth_private key in the directory you run the scritp in. You will need to copy the private key to your client and install it.
+on the system. It creates the \<name\>.auth_private key in the directory you run the scritp in. You will need to copy the private key to your client and install it.
   
 Some things to note:
   * to activate the gpg encryption you need to upload your gpg public key. The file must end with .gpgkey The server will reconize that file name and place the key in the /var/www/.gpg directory activating the auto-encrypt functions.
   * Once auto-encrypt is on, any file uploaded will be gpg encrypted with your public key. If you upload a file that ends with .gpg the system will assume it is already encrypted and not attempt to encrypt it.
   * The only way to remove your GPG key is to ssh into the host and remove it mannually. It is located in the /var/www/.gpg directory named public.key. Once removed, the system will nolonger encrypt uploads.
   * You have to remove the old key BEFORE uploading a new one, it will not overwrite the key.
-  * The address to the site will be <address>.onion/DepositBox/ Just know that without the auth key, no one will be able to connect to your site.
+  * The address to the site will be \<address\>.onion/DepositBox/ Just know that without the auth key, no one will be able to connect to your site.
