@@ -1,6 +1,4 @@
 #!/bin/bash
-echo "not working yet!"
-exit
 sudo apt-get install lighttpd php-cgi git pip tor php-pear php8.1-dev libgpgme-dev -y
 sudo pip install pynacl
 sudo pecl channel-update pecl.php.net
@@ -33,4 +31,5 @@ echo "Create the directory /var/lib/tor/onion_auth"
 echo "then move the <name>.auth_private into the /var/lib/tor/onion_auth."
 echo "Please check the permission (shoould be chmod 644) and owner of the file"
 echo ""
-
+echo -n "onion address for this server is: "
+sudo cat /var/lib/tor/store_service/hostname
