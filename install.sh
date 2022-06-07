@@ -13,10 +13,12 @@ sudo cp DepositBox /var/www/html
 sudo mkdir /var/www/.gpg
 cd /var/www/html
 sudo chown -R www-data:www-data DepositBox
-
-#set lighttpd to service.bind = 127.0.0.1
-
-#edit torrc to turn on hidden service for 80 and 22
+sudo sed -i '/^server.port.*/i server.bind                 = "127.0.0.1"' /etc/lighttpd/lighttpd.conf
+sudo sed -i '/^#HiddenServicePort\ 22\ 127.0.0.1:22/a \\nHiddenServiceDir /var/lib/tor/store_service/\nHiddenServicePort 80 127.0.0.1:80\nHiddenServicePort 22 127.0.0.1:22' /etc/tor/torrc
+sudo systemctl stop lighttpd
+sudo systemctl start lighttpd
+sudo systemctl stop tor
+sudo systemctl start tor
 #start tor will create /var/lib/hidden_service/authorized_clients
 
 #On Client Side
