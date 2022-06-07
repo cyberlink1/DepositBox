@@ -1,5 +1,7 @@
 #!/bin/bash
-sudo apt-get install lighttpd php-cgi git pip tor php-pear php8.1-dev libgpgme-dev -y
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt-get install lighttpd php-cgi pip tor php-pear php8.1-dev libgpgme-dev -y
 sudo pip install pynacl
 sudo pecl channel-update pecl.php.net
 sudo pecl install gnupg
