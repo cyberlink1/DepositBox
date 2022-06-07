@@ -18,10 +18,9 @@ sudo chown -R www-data:www-data DepositBox
 
 #edit torrc to turn on hidden service for 80 and 22
 #start tor will create /var/lib/hidden_service/authorized_clients
-#create file in above dir <name>.auth (contains descriptor:x25519:<public-key>
 
 #On Client Side
 #ClientOnionAuthDir /var/lib/tor/onion_auth to /etc/tor/torrc
 #create directory /var/lib/tor/onion_auth
-#create file in directory <name>.auth_private
+
 systemctl enable tor
