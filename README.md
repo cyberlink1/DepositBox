@@ -15,7 +15,6 @@ This is something Ive been playing with and this is just a draft copy of the rea
   
   
   TODO
-  * Finish install.sh
   * Build php based rsync config to allow secure automated rsync between different units.
   * Build hardening script to harden the system.
   
