@@ -21,6 +21,7 @@ sudo systemctl stop tor
 sudo systemctl start tor
 #start tor will create /var/lib/hidden_service/authorized_clients
 sudo systemctl enable lighttpd
+sudo rm /var/www/html/index.lighttpd.html
 
 echo "Please run the tor-client-key.py to create the client key"
 echo "transfer the <name>.auth_private to your client host"
