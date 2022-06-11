@@ -38,4 +38,4 @@ Some things to note:
   * Once auto-encrypt is on, any file uploaded will be gpg encrypted with your public key. If you upload a file that ends with .gpg the system will assume it is already encrypted and not attempt to encrypt it.
   * The only way to remove your GPG key is to ssh into the host and remove it mannually. It is located in the /var/www/.gpg directory named public.key. Once removed, the system will nolonger encrypt uploads.
   * You have to remove the old key BEFORE uploading a new one, it will not overwrite the key.
-  * The address to the site will be \<address\>.onion/DepositBox/ Just know that without the auth key, no one will be able to connect to your site.
+  * The address to the site will be \<address\>.onion/DepositBox/ Just know that without the auth key installed, you will not be able to connect to your site.
