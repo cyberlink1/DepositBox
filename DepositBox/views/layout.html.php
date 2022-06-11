@@ -50,8 +50,6 @@
 
     <div id="footer">
       <hr />
-      <div id="github"><a href="https://github.com/jvaubourg/php-piratebox"><?= _('Any problem? Contribute!') ?></a> - AGPL 3.0</div>
-    </div>
   </div>
 </body>
 
