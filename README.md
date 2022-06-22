@@ -38,3 +38,5 @@ Some things to note:
   * The only way to remove your GPG key is to ssh into the host and remove it mannually. It is located in the /var/www/.gpg directory named public.key. Once removed, the system will nolonger encrypt uploads.
   * You have to remove the old key BEFORE uploading a new one, it will not overwrite the key.
   * The address to the site will be \<address\>.onion/DepositBox/ Just know that without the auth key installed, you will not be able to connect to your site.
+  * If you want to activate the encrypted USB storage, cd to the encrypted-usb directory and run "sudo make-enc.sh"
+    * after this is set up you can use "sudo ./mount-enc.sh" to mount the usb disk and "sudo ./umount-enc.sh" to unmount the disk
