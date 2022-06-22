@@ -17,6 +17,11 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+$filename = '/var/www/html/DepositBox/public/uploads/.missing-disk';
+
+if (file_exists($filename)) {
+    exit("<center><h1>Your Encrypted filesystem is not mounted!</h1></center>");
+}
 
 require dirname(__FILE__).'/lib/limonade.php';
 require dirname(__FILE__).'/controller.php';
