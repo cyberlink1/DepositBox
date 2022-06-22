@@ -11,6 +11,7 @@ echo "extension=gnupg.so" | sudo tee -a /etc/php/8.1/cgi/conf.d/20-gnupg.ini
 sudo service lighttpd force-reload
 sudo cp -r DepositBox /var/www/html
 sudo mkdir /var/www/.gpg
+sudo chown -R www-data:www-data /var/www/.gpg
 cd /var/www/html
 sudo chown -R www-data:www-data DepositBox
 sudo sed -i '/^server.port.*/i server.bind                 = "127.0.0.1"' /etc/lighttpd/lighttpd.conf
