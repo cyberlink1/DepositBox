@@ -9,6 +9,9 @@ sudo lighty-enable-mod fastcgi
 sudo lighty-enable-mod fastcgi-php
 echo "extension=gnupg.so" | sudo tee -a /etc/php/8.1/cgi/conf.d/20-gnupg.ini
 sudo service lighttpd force-reload
+sudo chmod 755 encrypted-usb/make-enc.sh
+sudo chmod 755 encrypted-usb/mount-enc.sh
+sudo chmod 755 encrypted-usb/umount-enc.sh
 sudo cp -r DepositBox /var/www/html
 sudo mkdir /var/www/.gpg
 sudo chown -R www-data:www-data /var/www/.gpg
