@@ -42,6 +42,6 @@ Some things to note:
     * after this is set up you can use "sudo ./mount-enc.sh" to mount the usb disk and "sudo ./umount-enc.sh" to unmount the disk
   * This unit activates ssh on the tor network. 
     * to ssh over tor you will need your auth tor keys set up
-    * It is advized that you put your ssh public key on the server as well
+    * It is advized that you put your ssh public key on the server as well (torify ssh-copy-id \<user\>@\<address\>.onion)
     * It is advized that you change the /etc/ssh/sshd_config file entry "PasswordAuthentication" to "no" (must have set up your public key first)
  * to ssh over tor use the command "torify ssh -l \<username\> \<address\>.onion"
