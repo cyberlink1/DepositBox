@@ -44,4 +44,4 @@ Some things to note:
     * to ssh over tor you will need your auth tor keys set up
     * It is advized that you put your ssh public key on the server as well
     * It is advized that you change the /etc/ssh/sshd_config file entry "PasswordAuthentication" to "no" (must have set up your public key first)
- * to ssh over tor use the command "torify ssh -l <username> <address>.onion"
+ * to ssh over tor use the command "torify ssh -l \<username\> \<address\>.onion"
