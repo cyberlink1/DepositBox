@@ -9,7 +9,6 @@ The idea is to put together a small, ultra secure, file storage unit that can be
   ## TODO
   * Build php based rsync config to allow secure automated rsync between different units.
   * Build hardening script to harden the system.
-  * set up encrypted usb drive as upload storage.
   
 # How to use
 
